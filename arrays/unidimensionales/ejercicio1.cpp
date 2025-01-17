@@ -11,6 +11,7 @@ void verVector(int v[], int tamano){
         cout<<"El elemento "<<i+1<<" del vector es: "<<v[i]<<endl;
     }
 }
+
 main()
 {
     int ne;

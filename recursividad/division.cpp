@@ -1,32 +1,25 @@
 #include <iostream>
 using namespace std;
-
 // Función recursiva para dividir dos números
-void dividir(int dividendo, int divisor, int &cociente, int &residuo) {
-    if (dividendo < divisor) {
-        cociente = 0;
-        residuo = dividendo;
-    } else {
-        dividir(dividendo - divisor, divisor, ++cociente, residuo);
-    }
+int dividir(int a, int b, int &cociente) {
+    if (b == 0)
+        return -1;
+    if (a < b)
+        return a;
+    else{
+        cociente++;
+        return dividir(a - b, b, cociente);
+    }        
+    
 }
-
 int main() {
-    int dividendo, divisor, cociente = 0, residuo = 0;
+    int dividendo, divisor, cociente=0,residuo = 0;
     cout << "Introduce el dividendo: ";
     cin >> dividendo;
     cout << "Introduce el divisor: ";
     cin >> divisor;
-
-    if (divisor == 0) {
-        cout << "Error: División por cero no es permitida." << endl;
-        return 1;
-    }
-
-    dividir(dividendo, divisor, cociente, residuo);
-
-    cout << "El cociente de " << dividendo << " dividido por " << divisor << " es: " << cociente << endl;
-    cout << "El residuo es: " << residuo << endl;
-
-    return 0;
+    residuo = dividir(dividendo, divisor, cociente);
+    (residuo == -1) ? cout << "Error: División entre cero." << endl : cout << "El cociente es: " << cociente << " y el residuo es: " << residuo << endl;
+        
+       
 }
