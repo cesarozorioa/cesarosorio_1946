@@ -1,3 +1,5 @@
+//programa para definir una tabla o matriz y acceder
+//a los elementos de la estructura
 #include <iostream>
 using namespace std;
 main()
