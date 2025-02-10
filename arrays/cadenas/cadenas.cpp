@@ -15,19 +15,34 @@ int longitudCadena(char cad[])
 }
 int contarPalabras(char cad[])
 {
-    int palabras = 0;
-    bool palabra = false;
+    char aux[20];
+    //casos que debe resolver la funcion
+    /*
+        1 la     casa    es  blanca # 3 palabras
+        2       la casa # 2 palabras
+        3 la     # 1 palabra
+        4 g a d # 0 palabras
+        5         # 0 palabras
+    */
+    int palabras = 0,j=0;    
     for (int i = 0; cad[i] != '\0'; i++)
     {
-        if (cad[i] == ' ' && (cad[i + 1] != ' ' && (cad[i + 1] != '\0') ))
-        {
+       while (cad[i] != ' ' && cad[i] != '\0'){
+            aux[j] = cad[i];
+            
+            if(cad[i]!='\0'){
+                i++;
+            }            
+            j++;          
+        }        
+        aux[j] = '\0';        
+        j = 0;
+        cout<<"aux: "<<aux<<endl;
+        if (aux[0] != '\0' && aux[1] != '\0')
             palabras++;
-            palabra = true;
-        }
-    } 
-    (palabra) ? palabras++ : palabras;
-
-
+        if (cad[i] == '\0')
+            break;
+    }
     return palabras;
 }
 
