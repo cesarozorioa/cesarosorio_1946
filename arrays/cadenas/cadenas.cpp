@@ -15,21 +15,12 @@ int longitudCadena(char cad[])
 }
 int contarPalabras(char cad[])
 {
-    char aux[20];
-    //casos que debe resolver la funcion
-    /*
-        1 la     casa    es  blanca # 3 palabras
-        2       la casa # 2 palabras
-        3 la     # 1 palabra
-        4 g a d # 0 palabras
-        5         # 0 palabras
-    */
+    char aux[20];    
     int palabras = 0,j=0;    
     for (int i = 0; cad[i] != '\0'; i++)
     {
        while (cad[i] != ' ' && cad[i] != '\0'){
-            aux[j] = cad[i];
-            
+            aux[j] = cad[i];            
             if(cad[i]!='\0'){
                 i++;
             }            

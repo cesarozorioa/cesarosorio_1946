@@ -29,9 +29,6 @@ main()
     cin.getline(apellido,20);
     cout<<"Su apellido inicial es: "<<apellido<<endl;
     cambiarArray(apellido);
-    cout<<"Su apellido luego de llamar a la funcion es: "<<apellido<<endl;  
-
-    
-        
+    cout<<"Su apellido luego de llamar a la funcion es: "<<apellido<<endl;         
 
 }
