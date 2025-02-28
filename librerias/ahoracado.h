@@ -16,3 +16,9 @@ void frutas(string frutas[]){
     for(int i=0;i<5;i++)
         frutas[i] = frutasx[i];
 }
+void paises(string paises[]){
+    string paisesx[5]={"peru","ecuador","colombia","argentina","chile"};
+    for(int i=0;i<5;i++){
+        paises[i]=paisesx[i];
+    }
+}

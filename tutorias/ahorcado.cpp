@@ -8,9 +8,7 @@ string palabraAleatoria(string palabras[]){
     int numero = rand() % 5;
     return palabras[numero];
 }
-void humano(int intento){
-    cout<<"Intento: "<<intento<<endl;
-    system("pause");
+void humano(int intento){    
     switch(intento){
         case 1: 
             cout<<"   O   "<<endl;
@@ -84,6 +82,7 @@ int opciones(){
     cout << "1. Deportes" << endl;
     cout <<"2. Animales" << endl;
     cout << "3. Frutas" << endl;
+    cout <<"4. Paises" <<endl;
     cout<<"Esoja una opcion: ";
     cin >> op;
     return op;
@@ -97,7 +96,7 @@ main()
     cout << "-------------------" << endl;
     cout<<"Elige una categoria: "<<endl;
     op = opciones();
-    (op==1)? deportes(palabras): (op==2)? animales(palabras): frutas(palabras);
+    (op==1)? deportes(palabras): (op==2)? animales(palabras): (op==3)?frutas(palabras):paises(palabras);
     system("cls");
     palabraSeleccionada = palabraAleatoria(palabras);
     jugar(palabraSeleccionada);
