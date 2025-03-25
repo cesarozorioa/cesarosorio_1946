@@ -1,0 +1,39 @@
+Precios de los artículos:
+laptop: 0
+monitor: 4.59037e-41
+teclado: -9.79127e+27
+impresora: 6.97847e-43
+camara: -7.49859e+15
+mouse: 4.59037e-41
+
+Cantidades vendidas en la sucursal Norte:
+laptop: 0
+monitor: 0
+teclado: 0
+impresora: 0
+camara: 0
+mouse: 0
+
+Cantidades vendidas en la sucursal Sur:
+laptop: 0
+monitor: 0
+teclado: 0
+impresora: 0
+camara: 0
+mouse: 0
+
+Cantidades vendidas en la sucursal Este:
+laptop: 0
+monitor: 0
+teclado: 0
+impresora: 0
+camara: 0
+mouse: 0
+
+Cantidades vendidas en la sucursal Oeste:
+laptop: 0
+monitor: 0
+teclado: 0
+impresora: 0
+camara: 0
+mouse: 0

@@ -1,0 +1,15 @@
+	Dia 1	Dia 2	Dia 3	Dia 4	Dia 5	Dia 6	Dia 7	Total
+JUAN	11	19	12	23	35	20	35	155
+PEDRO	31	24	37	11	26	30	40	199
+JOSE	33	24	36	15	16	10	20	154
+LUIS	28	22	35	14	13	23	33	168
+CARLOS	19	12	18	21	37	36	33	176
+
+Conductor con mas kilometros recorridos: PEDRO con 199 km
+
+Representacion grafica de los kilometros recorridos (por cada 'X' = 20 km):
+JUAN: XXXXXXX (155 km)
+PEDRO: XXXXXXXXX (199 km)
+JOSE: XXXXXXX (154 km)
+LUIS: XXXXXXXX (168 km)
+CARLOS: XXXXXXXX (176 km)

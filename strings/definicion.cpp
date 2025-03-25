@@ -14,6 +14,11 @@ int main()
     inicial = "cad";
     cout<<inicial<<endl;
     cout<<nombre2<<endl;
+    string s[10];
+    s[0]='a';
+    cout<<endl;   
+    cout<<"letra: "<<s[0]<<endl;
+    
 
     return 0;
 }

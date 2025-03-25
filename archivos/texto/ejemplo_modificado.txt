@@ -1,7 +1,6 @@
 Hola, mundo!
 Esto es una prueba.
-Linea 3.
-Línea agregada al final.
+Cadena 3.
+Cadena agregada al final.
 Otra linea mas.
-
 estamos con archivos
